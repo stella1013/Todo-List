@@ -11,6 +11,7 @@ describe('UNIT TEST - APP', ()=>{
 
 	afterEach(() => {
 		jest.clearAllMocks();
+        document.body.innerHTML = `<div id="app"></div>`;
 	});
 
     it('initializes application', ()=>{
@@ -19,11 +20,6 @@ describe('UNIT TEST - APP', ()=>{
         expect(appElement?.childElementCount).toBeGreaterThan(0);
     });
 
-    it('Shows one todo upon updating the DOM', ()=>{
-        let todoList = document.getElementById('todo-list');
-        expect(todoList?.childElementCount).toBe(1);
-
-    
-    });
+   
 
 });

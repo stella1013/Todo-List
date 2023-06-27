@@ -1,5 +1,5 @@
-# Boilerplate TS- Frontend
-
+# Todo List
+//TODO: #4 Update Readme
 This version of the application introduces functionality for customers with limited technology skillsets so that they can easily control specific aspects (Color scheme, number of items on a given page or section, text elements, graphics and text, video etc.) of platform UX and content.
 
 ## Dependency List
