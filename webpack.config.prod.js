@@ -4,7 +4,7 @@ const ModuleFederationPlugin = require("webpack").container.ModuleFederationPlug
 const path = require('path');
 const Dotenv = require('dotenv-webpack'); //for reading env var in project
 require('dotenv').config(); //for reading env var in the webpack config
-const HtmlWebpackPartialsPlugin = require('html-webpack-partials-plugin');
+//const HtmlWebpackPartialsPlugin = require('html-webpack-partials-plugin');
 
 module.exports =['hidden-source-map'].map((devtool) => ({
 	mode: 'production',
@@ -95,7 +95,7 @@ module.exports =['hidden-source-map'].map((devtool) => ({
 			//chunks: ['app']
 			
 		}),
-		new HtmlWebpackPartialsPlugin({
+		/* new HtmlWebpackPartialsPlugin({
 			path: './src/headtag/analytics.html',
 			location: 'head',
 			priority: 'high',
@@ -103,7 +103,7 @@ module.exports =['hidden-source-map'].map((devtool) => ({
 				ga_property_id: 'UA-50093674-1',
 				gaTag_property_id: 'GTM-NC3P2WC'
 			}
-		}),
+		}), */
 		new MiniCssExtractPlugin({
 			filename: 'style.css',
 		})
