@@ -74,7 +74,7 @@ module.exports =['hidden-source-map'].map((devtool) => ({
     },
     resolve: { extensions: ['.ts', '.js'] },
 	plugins: [
-		new Dotenv({
+		/*new Dotenv({
 			path: './.env'}),
 	/* 	new ModuleFederationPlugin({
 			name:'user_create',
