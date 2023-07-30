@@ -1,4 +1,4 @@
-import { App } from '../App';
+import { App } from "../App";
 
 //const mockSetApplicationTitle = jest.fn();
 
@@ -7,18 +7,16 @@ import { App } from '../App';
 //const AppMock = (App as jest.Mock<App>);
 //let createUserApp: App;
 
-describe('UNIT TESTS - App', () => {
-    let createFormApp: App
-	beforeEach(() => {
-		
-	});
-	afterEach(() => {
-		jest.clearAllMocks();
-	});
-	it('sets and outputs APP_STATUS', () => {
-        createFormApp = new App();
-        const setAppStatus = jest.fn(); 
-		/*  const process = {
+describe("UNIT TESTS - App", () => {
+  let createFormApp: App;
+  beforeEach(() => {});
+  afterEach(() => {
+    jest.clearAllMocks();
+  });
+  it("sets and outputs APP_STATUS", () => {
+    createFormApp = new App();
+    const setAppStatus = jest.fn();
+    /*  const process = {
            env:{
                NODE_ENV:'development'
            }
@@ -26,7 +24,7 @@ describe('UNIT TESTS - App', () => {
        const status = process.env.NODE_ENV;
        
        expect(status).toEqual('development'); */
-	});
+  });
 });
 /* escribe.skip('INTEGRATION TESTS - App', ()=>{
     
