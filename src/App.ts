@@ -9,20 +9,12 @@ import { TodoListable } from "./gui/web/components/todo-list/todolistable.interf
 
  */
 export class App {
-	public todoList:TodoListable;
+  public todoList: TodoListable;
 
-	constructor() {	
-		this.todoList = new TodoList('myList', 'Todo Today', 'app');
-		this.init();
-	}
+  constructor() {
+    this.todoList = new TodoList("myList", "Todo Today", "app");
+    this.init();
+  }
 
-	init(){
-		 
-
-		 
-		 
-	}
-	
+  init() {}
 }
-
-

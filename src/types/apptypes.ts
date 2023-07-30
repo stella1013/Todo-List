@@ -1,3 +1,4 @@
-
-
-export enum Mode { PRODUCTION = 1, DEVELOPMENT };
+export enum Mode {
+  PRODUCTION = 1,
+  DEVELOPMENT,
+}

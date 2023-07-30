@@ -1,6 +1,1 @@
-
-export class ViewHandler {
-  
-
-	
-}
+export class ViewHandler {}

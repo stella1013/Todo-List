@@ -4,9 +4,9 @@
 ////import  createStoreWithMiddleWare  from '../redux/store';
 
 // import { Provider } from 'react-redux';
-import rootReducer from '../../redux/Reducers';
+import rootReducer from "../../redux/Reducers";
 //import configureMockStore from 'redux-mock-store';
-import { createStore } from 'redux';
+import { createStore } from "redux";
 
 //import { AppState } from '../redux/store';
 //import ReduxThunk  from 'redux-thunk';
@@ -23,7 +23,7 @@ import { createStore } from 'redux';
  * @param {object} - initialState - initial state for store.
  * @function storeFactory
  * @returns {Store} - Redux store
-*/
+ */
 /*
 export const mockStoreFactory = () => {
 	const createMockStore = configureMockStore();
@@ -31,7 +31,7 @@ export const mockStoreFactory = () => {
 };
 */
 export const storeFactory = (initialState: any) => {
-	return createStore(rootReducer, initialState);
+  return createStore(rootReducer, initialState);
 };
 /*
  * Returns Shallow Wrapper containing node(s) with the given data-test value
@@ -41,7 +41,7 @@ export const storeFactory = (initialState: any) => {
  */
 
 export const findByTestAttr = (wrapper: any, val: string) => {
-	return wrapper.find(`[data-testid="${val}"]`);
+  return wrapper.find(`[data-testid="${val}"]`);
 };
 
 /*

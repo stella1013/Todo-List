@@ -1,1 +1,1 @@
-declare function isElementVisible(element:HTMLElement):boolean;
+declare function isElementVisible(element: HTMLElement): boolean;
